@@ -1,0 +1,11 @@
+{
+    "name": "hello-world",
+    "author": "Ricardo",
+    "private": true,
+    "dependencies": {
+        "express": "^4.16.4"
+    },
+    "devDependencies": {
+        "morgan": "^1.9.1"
+    }
+}
