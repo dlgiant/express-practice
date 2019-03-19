@@ -1,0 +1,12 @@
+{
+    "name": "static-file-server",
+    "private": true,
+    "scripts": {
+        "start": "nodemon app.js",
+        "run": "nodemon app.js"
+    },
+    "dependencies": {
+        "express": "^4.16.4",
+        "morgan": "^1.9.1"
+    }
+}
