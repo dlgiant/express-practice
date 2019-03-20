@@ -1,0 +1,12 @@
+{
+    "name": "route-api-versioning",
+    "author": "Ricardo",
+    "private": true,
+    "dependencies": {
+        "express": "^4.16.4"
+    },
+    "scripts": {
+        "start": "nodemon app.js"
+    },
+    "devDependencies": {}
+}
