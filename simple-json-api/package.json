@@ -1,0 +1,10 @@
+{
+    "name": "simple-json-api",
+    "private": true,
+    "scripts": {
+        "start": "nodemon app"
+    },
+    "dependencies": {
+        "express": "^4.16.4"
+    }
+}
