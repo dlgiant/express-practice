@@ -34,3 +34,14 @@ userSchema.pre("save", function(done) {
 		});
 	});
 });
+
+// Verify password, keep safe from timing attack
+userSchema.methods.checkpassword = function(guess, done){
+	bcrypt.compare(guess, this.password, function(err, isMatch) {
+		done(err, isMatch);
+	});
+};
+
+// Create and export User model
+var User = mongoose.model("User", userSchema);
+module.exports = User;
