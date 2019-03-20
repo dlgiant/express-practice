@@ -9,7 +9,7 @@ var userSchema = mongoose.Schema({
 	password: {type: String, required: true},
 	createdAt: {type: String, default: Date.now},
 	displayName: String,
-	bio: String
+	bio: String,
 });
 
 userSchema.methods.name = function(){
