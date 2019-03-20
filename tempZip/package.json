@@ -1,0 +1,13 @@
+{
+   "name": "tempZip",
+   "private": true,
+   "scripts": {
+      "start": "nodemon app.js"
+   },
+   "dependencies": {
+      "ejs": "^2.3.1",
+      "express": "^4.16.4",
+      "forecastio": "^0.2.0",
+      "zippity-do-dah": "0.0.x"
+   }
+}
