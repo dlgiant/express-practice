@@ -1,0 +1,16 @@
+{
+   "name": "complex-view-rendering",
+   "private": true,
+   "scripts": {
+      "start": "nodemon app.js"
+   },
+   "dependencies": {
+      "consolidate": "^0.15.1",
+      "ejs": "^2.6.1",
+      "express": "^4.16.4",
+      "forecastio": "^0.2.0",
+      "jade": "^1.11.0",
+      "walrus": "^0.10.1",
+      "zippity-do-dah": "0.0.x"
+   }
+}
