@@ -7,7 +7,7 @@ var SALT_FACTOR = 10;
 var userSchema = mongoose.Schema({
 	username: {type: String, required: true, unique: true},
 	password: {type: String, required: true},
-	createdAt: {type: String, default: Date.now},
+	createdAt: {type: Date, default: Date.now},
 	displayName: String,
 	bio: String,
 });
@@ -29,14 +29,14 @@ userSchema.pre("save", function(done) {
 		if (err) { return done(err); }
 		bcrypt.hash(user.password, salt, noop, function(err, hashedPassword) {
 			if (err) { return done(err); }
-			user.passport = hashedPassword;
+			user.password = hashedPassword;
 			done();
 		});
 	});
 });
 
 // Verify password, keep safe from timing attack
-userSchema.methods.checkpassword = function(guess, done){
+userSchema.methods.checkPassword = function(guess, done){
 	bcrypt.compare(guess, this.password, function(err, isMatch) {
 		done(err, isMatch);
 	});
